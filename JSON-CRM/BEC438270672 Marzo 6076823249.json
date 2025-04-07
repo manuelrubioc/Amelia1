@@ -1,0 +1,824 @@
+{
+  "metadatos": {
+    "version": "2.1",
+    "fechaActualizacion": "2025-04-06",
+    "descripcion": "Plantilla JSON con instrucciones detalladas para la extracción completa y precisa de datos de facturas de Movistar Colombia (servicios móviles y fijos)"
+  },
+  "informacionCliente": {
+    "nombre": "INGRID PAOLA MENDOZA GOMEZ",
+    "identificacion": {
+      "tipo": "CC",
+      "numero": "63559214"
+    },
+    "direccion": "CL 202 KR 18 08 LA PAZ NO USAR",
+    "ciudad": "FLORIDABLANCA - SANTANDER"
+  },
+  "informacionFactura": {
+    "numeroFactura": "BEC438270672",
+    "numeroReferencia": {
+      "principal": "60669557441",
+      "servicio": "60669557442",
+      "equipo": "60669557443"
+    },
+    "fechaGeneracion": "27/02/2025",
+    "fechaVencimiento": "05/03/2025",
+    "fechaSuspension": "06/03/2025",
+    "periodoFacturado": {
+      "inicio": "27/01/2025",
+      "fin": "26/02/2025"
+    },
+    "lineaTiempo": {
+      "inicioPeriodo": "27/02/2025",
+      "fechaGeneracion": "27/02/2025",
+      "fechaVencimiento": "05/03/2025",
+      "fechaSuspension": "06/03/2025",
+      "finPeriodo": "26/03/2025"
+    }
+  },
+  "informacionServicio": {
+    "tipoServicio": "Servicio Fijo",
+    "numeroLinea": "6076833249",
+    "plan": {
+      "nombre": "Trio Voz Ilimitada Nacional 200 Min LDI Banda Ancha 900Mbps_IPTV_1 deco_Combo Plus_Est 1 y 2_RV_20606",
+      "caracteristicas": {
+        "navegacion": {
+          "condicionesEspeciales": "Banda Ancha 900Mbps",
+          "estadoInternet": "Activo"
+        },
+        "appsTVIncluidas": "IPTV_1 deco_Combo Plus_Est 1 y 2",
+        "minutosInternacionales": {
+          "cantidad": "200",
+          "destinos": "LDI"
+        },
+        "smsInternacionales": "0",
+        "minutosNacionales": "Ilimitado",
+        "smsNacionales": "0"
+      },
+      "tarifasAdicionales": {
+        "vozMovistar": "0",
+        "vozFijo": "0",
+        "vozOtrosOperadores": "100",
+        "smsOtrosOperadores": "0",
+        "smsMovistar": "0"
+      },
+      "notificacionesCambioPrecios": []
+    }
+  },
+  "resumenFacturacion": {
+    "saldoMesAnterior": "0",
+    "totalFacturaMesAnterior": "88,293",
+    "totalNotasCreditoServicio": "0",
+    "pagosRealizados": "-88,293",
+    "cargosReconexionMora": {
+      "interesMoraAnterior": "0",
+      "reconexion": "0",
+      "total": "0"
+    },
+    "servicioMesActual": "88,293",
+    "serviciosMesActualIVAIncluido": "88,293",
+    "equipoACuotas": {
+      "subtotal": "6,000",
+      "valorCuotaMesAnterior": "6,000",
+      "totalNotasCreditoEquipo": "0"
+    },
+    "totalAPagar": "94,293"
+  },
+  "detalleFacturacion": {
+    "valorPlan": "143,989",
+    "cargosAdicionales": [
+      {
+        "descripcion": "Deco Adicional IPTV_RV_15666",
+        "valor": "15,499",
+        "impuestos": "0",
+        "valorConImpuestos": "15,499"
+      },
+      {
+        "descripcion": "Diferido Equipo Baseport",
+        "valor": "6,000",
+        "impuestos": "0",
+        "valorConImpuestos": "6,000"
+      },
+      {
+        "descripcion": "Impuesto telefonia Fija Floridablanca",
+        "valor": "800",
+        "impuestos": "0",
+        "valorConImpuestos": "800"
+      }
+    ],
+    "gastosCobranza": [],
+    "descuentos": [
+      {
+        "descripcion": "DCTO Plan IPTV Fibra_19256",
+        "valor": "-35,552"
+      },
+      {
+        "descripcion": "DCTO Plan Banda Ancha 900Mbps Trio_RV_20530",
+        "valor": "-35,079"
+      },
+      {
+        "descripcion": "DCTO Plan Voz Ilimitado Nacional 200 Min LDI RV_19244",
+        "valor": "-1,364"
+      }
+    ]
+  },
+  "comparativoCargos": {
+    "mesAnterior": {
+      "valorPlan": "143,989",
+      "cargosAdicionales": "21,499",
+      "descuentos": "-71,995",
+      "total": "94,293"
+    },
+    "mesActual": {
+      "valorPlan": "143,989",
+      "cargosAdicionales": "21,499",
+      "descuentos": "-71,995",
+      "total": "94,293"
+    },
+    "variacion": {
+      "valorPlan": "0",
+      "cargosAdicionales": "0",
+      "descuentos": "0",
+      "total": "0"
+    }
+  },
+  "historicoCunsumos": {
+    "evolucionConsumoMiles": {
+      "meses": {
+        "mes1": "80",
+        "mes2": "87",
+        "mes3": "95",
+        "mes4": "95",
+        "mes5": "94",
+        "mes6": "94"
+      },
+      "promedio": "91"
+    },
+    "minutos": {
+      "meses": {
+        "mes1": "29",
+        "mes2": "114",
+        "mes3": "68",
+        "mes4": "110",
+        "mes5": "23",
+        "mes6": "98"
+      },
+      "promedio": "74"
+    },
+    "datos": {
+      "meses": {
+        "mes1": "0",
+        "mes2": "0",
+        "mes3": "0",
+        "mes4": "0",
+        "mes5": "0",
+        "mes6": "0"
+      },
+      "promedio": "0"
+    }
+  },
+  "detalleConsumos": {
+    "llamadas": {
+      "total": "2",
+      "valorTotal": "0",
+      "detalle": [
+        {
+          "fecha": "10/02/25",
+          "hora": "16:52:29",
+          "numeroMarcado": "Bucaramanga 6076978555",
+          "duracion": "00:00:18",
+          "valorUnitario": "0",
+          "total": "0"
+        },
+        {
+          "fecha": "17/02/25",
+          "hora": "11:17:29",
+          "numeroMarcado": "Bucaramanga 6076978555",
+          "duracion": "00:48:12",
+          "valorUnitario": "0",
+          "total": "0"
+        }
+      ]
+    },
+    "llamadasInternacionales": {
+      "total": "0",
+      "valorTotal": "0",
+      "detalle": []
+    },
+    "llamadasAOtrosOperadores": {
+      "total": "29",
+      "valorTotal": "4,800",
+      "detalle": [
+        {
+          "fecha": "28/01/25",
+          "hora": "14:07:29",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:37",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "30/01/25",
+          "hora": "12:32:13",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:01:02",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "30/01/25",
+          "hora": "13:43:35",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:19",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "07:49:12",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:15",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "07:49:12",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:14",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "09:35:51",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:49",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "09:35:51",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:50",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "09:39:01",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:50",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "09:39:02",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:48",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "16:45:23",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:37",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "31/01/25",
+          "hora": "16:45:23",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:37",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "02/02/25",
+          "hora": "18:48:31",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:17",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "03/02/25",
+          "hora": "09:05:40",
+          "numeroMarcado": "OTROS OPERADORES 3165598238",
+          "duracion": "00:00:26",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "03/02/25",
+          "hora": "17:50:53",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:10",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "08/02/25",
+          "hora": "17:29:11",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:02",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "11/02/25",
+          "hora": "09:50:19",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:02:07",
+          "valorUnitario": "100",
+          "total": "300"
+        },
+        {
+          "fecha": "12/02/25",
+          "hora": "10:48:15",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:37",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "12/02/25",
+          "hora": "14:33:39",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:15",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "12/02/25",
+          "hora": "20:12:45",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:06:35",
+          "valorUnitario": "100",
+          "total": "700"
+        },
+        {
+          "fecha": "13/02/25",
+          "hora": "06:35:52",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:57",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "13/02/25",
+          "hora": "14:31:51",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:27",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "14/02/25",
+          "hora": "11:53:41",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:58",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "14/02/25",
+          "hora": "14:37:14",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:55",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "15/02/25",
+          "hora": "15:22:06",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:18",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "17/02/25",
+          "hora": "16:27:21",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:11",
+          "valorUnitario": "100",
+          "total": "200"
+        },
+        {
+          "fecha": "17/02/25",
+          "hora": "17:42:10",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:22",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "20/02/25",
+          "hora": "15:04:10",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:00:49",
+          "valorUnitario": "100",
+          "total": "100"
+        },
+        {
+          "fecha": "20/02/25",
+          "hora": "17:15:00",
+          "numeroMarcado": "OTROS OPERADORES 3162667845",
+          "duracion": "00:02:33",
+          "valorUnitario": "100",
+          "total": "300"
+        },
+        {
+          "fecha": "24/02/25",
+          "hora": "14:04:52",
+          "numeroMarcado": "OTROS OPERADORES 3158462465",
+          "duracion": "00:01:50",
+          "valorUnitario": "100",
+          "total": "200"
+        }
+      ]
+    },
+    "mensajesTexto": {
+      "total": "0",
+      "valorTotal": "0",
+      "detalle": []
+    },
+    "datosInternet": {
+      "totalKB": "0",
+      "valorTotal": "0",
+      "detalle": []
+    },
+    "nota": "CL - CLASE AU- Automática SA - Semiautomatica MO - Móvil IT - Internet T - TARIFA N - Normal R - Reducida"
+  },
+  "equipoMovilACuotas": {
+    "equipo": "MOD-OT-BASE***-BASEPORT*LEGALIZA*-MITR-C",
+    "imei": "2C968298819C",
+    "fechaCompra": "23/01/2024",
+    "facturaVenta": "18035590",
+    "numeroCuota": "14",
+    "valorCuota": "6,000",
+    "saldoPendiente": "204,000",
+    "totalPagarCuotaPeriodo": "6,000",
+    "historialCuotas": [
+      {
+        "numeroCuota": "1",
+        "fechaCobro": "27/01/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "2",
+        "fechaCobro": "27/02/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "3",
+        "fechaCobro": "27/03/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "4",
+        "fechaCobro": "27/04/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "5",
+        "fechaCobro": "27/05/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "6",
+        "fechaCobro": "27/06/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "7",
+        "fechaCobro": "27/07/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "8",
+        "fechaCobro": "27/08/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "9",
+        "fechaCobro": "27/09/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "10",
+        "fechaCobro": "27/10/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "11",
+        "fechaCobro": "27/11/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "12",
+        "fechaCobro": "27/12/2024",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "13",
+        "fechaCobro": "27/01/2025",
+        "valor": "6,000",
+        "estado": "Pagada"
+      },
+      {
+        "numeroCuota": "14",
+        "fechaCobro": "27/02/2025",
+        "valor": "6,000",
+        "estado": "Facturada"
+      },
+      {
+        "numeroCuota": "15",
+        "fechaCobro": "27/03/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "16",
+        "fechaCobro": "27/04/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "17",
+        "fechaCobro": "27/05/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "18",
+        "fechaCobro": "27/06/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "19",
+        "fechaCobro": "27/07/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "20",
+        "fechaCobro": "27/08/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "21",
+        "fechaCobro": "27/09/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "22",
+        "fechaCobro": "27/10/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "23",
+        "fechaCobro": "27/11/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "24",
+        "fechaCobro": "27/12/2025",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "25",
+        "fechaCobro": "27/01/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "26",
+        "fechaCobro": "27/02/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "27",
+        "fechaCobro": "27/03/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "28",
+        "fechaCobro": "27/04/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "29",
+        "fechaCobro": "27/05/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "30",
+        "fechaCobro": "27/06/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "31",
+        "fechaCobro": "27/07/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "32",
+        "fechaCobro": "27/08/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "33",
+        "fechaCobro": "27/09/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "34",
+        "fechaCobro": "27/10/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "35",
+        "fechaCobro": "27/11/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "36",
+        "fechaCobro": "27/12/2026",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "37",
+        "fechaCobro": "27/01/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "38",
+        "fechaCobro": "27/02/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "39",
+        "fechaCobro": "27/03/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "40",
+        "fechaCobro": "27/04/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "41",
+        "fechaCobro": "27/05/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "42",
+        "fechaCobro": "27/06/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "43",
+        "fechaCobro": "27/07/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "44",
+        "fechaCobro": "27/08/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "45",
+        "fechaCobro": "27/09/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "46",
+        "fechaCobro": "27/10/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "47",
+        "fechaCobro": "27/11/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      },
+      {
+        "numeroCuota": "48",
+        "fechaCobro": "27/12/2027",
+        "valor": "6,000",
+        "estado": "Por Facturar"
+      }
+    ]
+  },
+  "informacionReconexion": {
+    "fechaAplicacion": "",
+    "valorReconexion": "",
+    "notas": "Si tienes productos individuales: Línea Fija $27,151 más IVA, Internet Fijo $27,151 más IVA, Televisión $10,664 más IVA. Si tienes un DUO: Línea Fija e Internet Fijo $27,151 más IVA, Línea Fija y Televisión $37,815 más IVA, Internet Fijo y Televisión $37,815 más IVA. Si tienes un TRIO: Línea Fija, Internet Fijo y Televisión $37,815 más IVA. Si tienes productos convergentes: Línea Celular, Línea Fija, Internet Fijo y Televisión $47,050 más IVA."
+  },
+  "notificacionCentralesRiesgo": {
+    "mensaje": "Estimado cliente, recuerde que tiene hasta la fecha límite de pago oportuno para cancelar su factura y evitar la suspensión del servicio, intereses de mora, cobro de rehabilitación por cada una de sus líneas y reporte a centrales de riesgo como moroso. Si ya realizó el pago, haga caso omiso de este aviso."
+  },
+  "mensajesImportantes": [
+    {
+      "titulo": "¿Qué Necesitas Saber?",
+      "contenido": "Estimado cliente, en Movistar no enviamos mensajes ofreciendo porcentajes (%) de descuentos en deudas a través de enlaces externos. Si recibes un mensaje así ten en cuenta que puede ser un engaño. Para verificar el estado de tu cuenta, usa nuestros canales oficiales."
+    },
+    {
+      "titulo": "¡SIN ESPERAS, SIN LLAMADAS Y SIN FILAS!",
+      "contenido": "Ahora puedes solicitar y pagar tu Factura Digital o hacer otros trámites de manera fácil y segura. Para clientes individuales: Descarga la App Mi Movistar o escribe \"Hola\" al WhatsApp 315 233 3333. Para Empresas: Entra en www.movistar.co/empresas o escribe \"Hola\" al WhatsApp 3166066666."
+    }
+  ],
+  "tasaInteresesMora": {
+    "mes": "Febrero",
+    "porcentaje": "1.9594%"
+  },
+  "informacionLegal": {
+    "cufe": "0x093e6b6f9461d725ee1c49c13d368feee4070f15c809078b2b39ecab45df1bc466aef74d19ff64942f1dc9ba0b879",
+    "autorizacionFacturacionElectronica": {
+      "numero": "18764074905464",
+      "fechaResolucion": "2024-07-11",
+      "prefijo": "BEC",
+      "rangoInicial": "400000001",
+      "rangoFinal": "450000000",
+      "fechaVigenciaDesde": "2024-07-11",
+      "fechaVigenciaHasta": "2026-07-11"
+    }
+  },
+  "canalesPago": {
+    "numeroReferenciaPago": {
+      "principal": "60669557441",
+      "servicio": "60669557442",
+      "equipo": "60669557443"
+    },
+    "opcionesPago": [
+      "App Mi Movistar",
+      "Web Mi Movistar",
+      "Nequi",
+      "Daviplata",
+      "PSE",
+      "Portal web de tu banco",
+      "Cajeros Electrónicos",
+      "Punto Pago Redeban",
+      "Audio Línea de su banco",
+      "Centros de Experiencia CE BARRANCABERMEJA, CE BUCARAMANGA CABECERA, CE BUCARAMANGA CENTRO, CE PIEDECUESTA",
+      "Máquinas de Autopago",
+      "Débito automático en Cuenta Bancaria"
+    ]
+  },
+  "gastosCobranza": {
+    "rangosMora": [
+      {"rango": "1-30 días", "valor": "1,200"},
+      {"rango": "31-60 días", "valor": "1,700"},
+      {"rango": "61-90 días", "valor": "3,100"},
+      {"rango": "91-120 días", "valor": "5,800"},
+      {"rango": "121-180 días", "valor": "8,500"},
+      {"rango": "181-360 días", "valor": "11,200"},
+      {"rango": "mayor a 360 días", "valor": "13,900"}
+    ],
+    "notas": "Importante: A partir de febrero de 2025 si pagas tu factura después de la fecha de vencimiento, se generará un cobro por gastos de cobranza el cual dependerá de la edad de mora así: desde 1 hasta 30 días: $1.200, 31 a 60 días: $1.700, 61 a 90 días: $3.100, 91 a 120 días: $5.800, 121 a 180 días: $8.500, 181 a 360 días: $11.200, mayor a 360 días de mora: $13.900. Este cobro incluye IVA y se verá reflejado en la factura generada posterior al pago de tu deuda."
+  }
+}

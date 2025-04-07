@@ -1,0 +1,330 @@
+{
+  "metadatos": {
+    "version": "2.1",
+    "fechaActualizacion": "2025-04-06",
+    "descripcion": "Extracción completa y precisa de datos de factura de Movistar Colombia (servicio fijo)"
+  },
+  "informacionCliente": {
+    "nombre": "ZORAIDA APONTE PABON",
+    "identificacion": {
+      "tipo": "CC",
+      "numero": "63348058"
+    },
+    "direccion": "KR 22A # 107 - 34 BRR PROVENSA BUCARAMANGA",
+    "ciudad": "BUCARAMANGA - SANTANDER"
+  },
+  "informacionFactura": {
+    "numeroFactura": "BEC444543575",
+    "numeroReferencia": {
+      "principal": "60255921661",
+      "servicio": "60255921662",
+      "equipo": "60255921663"
+    },
+    "fechaGeneracion": "27/03/2025",
+    "fechaVencimiento": "05/04/2025",
+    "fechaSuspension": "06/04/2025",
+    "periodoFacturado": {
+      "inicio": "27/02/2025",
+      "fin": "26/03/2025"
+    },
+    "lineaTiempo": {
+      "inicioPeriodo": "27/03/2025",
+      "fechaGeneracion": "27/03/2025",
+      "fechaVencimiento": "05/04/2025",
+      "fechaSuspension": "06/04/2025",
+      "finPeriodo": "26/04/2025"
+    }
+  },
+  "informacionServicio": {
+    "tipoServicio": "Servicio Fijo",
+    "numeroLinea": "6076820085",
+    "plan": {
+      "nombre": "Trio Voz Ilimitada Nacional 200 Min LDI Banda Ancha 900Mbps Movistar TV_13515",
+      "caracteristicas": {
+        "navegacion": {
+          "condicionesEspeciales": "Banda Ancha 900Mbps",
+          "estadoInternet": "Activo"
+        },
+        "appsTVIncluidas": "Movistar TV App Incluido",
+        "minutosInternacionales": {
+          "cantidad": "200",
+          "destinos": "Larga Distancia Internacional"
+        },
+        "smsInternacionales": "0",
+        "minutosNacionales": "Ilimitado",
+        "smsNacionales": "0"
+      },
+      "tarifasAdicionales": {
+        "vozMovistar": "0",
+        "vozFijo": "0",
+        "vozOtrosOperadores": "0",
+        "smsOtrosOperadores": "0",
+        "smsMovistar": "0"
+      },
+      "notificacionesCambioPrecios": []
+    }
+  },
+  "resumenFacturacion": {
+    "saldoMesAnterior": "0",
+    "totalFacturaMesAnterior": "139,355",
+    "totalNotasCreditoServicio": "-47,355",
+    "pagosRealizados": "-92,000",
+    "cargosReconexionMora": {
+      "interesMoraAnterior": "206",
+      "reconexion": "32,310",
+      "total": "32,516"
+    },
+    "servicioMesActual": "139,291",
+    "serviciosMesActualIVAIncluido": "139,291",
+    "equipoACuotas": {
+      "subtotal": "0",
+      "valorCuotaMesAnterior": "3,000",
+      "totalNotasCreditoEquipo": "-3,000"
+    },
+    "totalAPagar": "171,807"
+  },
+  "detalleFacturacion": {
+    "valorPlan": "151,985",
+    "cargosAdicionales": [
+      {
+        "descripcion": "Disney_Premium_Fija_22025",
+        "valor": "46,900",
+        "impuestos": "0",
+        "valorConImpuestos": "46,900"
+      },
+      {
+        "descripcion": "Deco Incluido IPTV_40045",
+        "valor": "0",
+        "impuestos": "0",
+        "valorConImpuestos": "0"
+      },
+      {
+        "descripcion": "Segundo Deco Incluido IPTV_40098",
+        "valor": "0",
+        "impuestos": "0",
+        "valorConImpuestos": "0"
+      },
+      {
+        "descripcion": "RECONEXION BANDA ANCHA",
+        "valor": "32,310",
+        "impuestos": "0",
+        "valorConImpuestos": "32,310"
+      },
+      {
+        "descripcion": "Preferido Fijo Movil Incluido_20030",
+        "valor": "0",
+        "impuestos": "0",
+        "valorConImpuestos": "0"
+      }
+    ],
+    "gastosCobranza": [
+      {
+        "descripcion": "Gastos de Cobranza",
+        "valorSinImpuestos": "1,008",
+        "impuestos": "192",
+        "valorConImpuestos": "1,200"
+      }
+    ],
+    "descuentos": [
+      {
+        "descripcion": "DCTO Plan IPTV Fibra Trio_13530",
+        "valor": "-22,000"
+      },
+      {
+        "descripcion": "DCTO Plan Banda Ancha 900Mbps Trio_13499",
+        "valor": "-37,675"
+      },
+      {
+        "descripcion": "DCTO Plan Voz Ilimitado Nacional 200 Min LDI para Trio_13101",
+        "valor": "-1,119"
+      }
+    ]
+  },
+  "comparativoCargos": {
+    "mesAnterior": {
+      "valorPlan": "151,985",
+      "cargosAdicionales": "49,900",
+      "descuentos": "-60,794",
+      "total": "141,091"
+    },
+    "mesActual": {
+      "valorPlan": "151,985",
+      "cargosAdicionales": "79,210",
+      "descuentos": "-60,794",
+      "total": "170,401"
+    },
+    "variacion": {
+      "valorPlan": "0",
+      "cargosAdicionales": "29,310",
+      "descuentos": "0",
+      "total": "29,310"
+    }
+  },
+  "historicoCunsumos": {
+    "evolucionConsumoMiles": {
+      "meses": {
+        "mes1": "80",
+        "mes2": "79",
+        "mes3": "79",
+        "mes4": "85",
+        "mes5": "142",
+        "mes6": "172"
+      },
+      "promedio": "106"
+    },
+    "minutos": {
+      "meses": {
+        "mes1": "0",
+        "mes2": "55",
+        "mes3": "1",
+        "mes4": "1",
+        "mes5": "41",
+        "mes6": "13"
+      },
+      "promedio": "19"
+    },
+    "datos": {
+      "meses": {
+        "mes1": "0",
+        "mes2": "0",
+        "mes3": "0",
+        "mes4": "0",
+        "mes5": "0",
+        "mes6": "0"
+      },
+      "promedio": "0"
+    }
+  },
+  "detalleConsumos": {
+    "llamadas": {
+      "total": "3",
+      "valorTotal": "0",
+      "detalle": [
+        {
+          "fecha": "03/03/25",
+          "hora": "11:43:29",
+          "numeroMarcado": "Bucaramanga 6076978555",
+          "duracion": "00:00:18",
+          "valorUnitario": "0",
+          "total": "0"
+        },
+        {
+          "fecha": "04/03/25",
+          "hora": "08:34:14",
+          "numeroMarcado": "Bucaramanga 6076978555",
+          "duracion": "00:03:15",
+          "valorUnitario": "0",
+          "total": "0"
+        },
+        {
+          "fecha": "04/03/25",
+          "hora": "08:37:53",
+          "numeroMarcado": "Bucaramanga 6076978555",
+          "duracion": "00:07:51",
+          "valorUnitario": "0",
+          "total": "0"
+        }
+      ]
+    },
+    "llamadasInternacionales": {
+      "total": "0",
+      "valorTotal": "0",
+      "detalle": []
+    },
+    "llamadasAOtrosOperadores": {
+      "total": "0",
+      "valorTotal": "0",
+      "detalle": []
+    },
+    "mensajesTexto": {
+      "total": "0",
+      "valorTotal": "0",
+      "detalle": []
+    },
+    "datosInternet": {
+      "totalKB": "0",
+      "valorTotal": "0",
+      "detalle": []
+    },
+    "nota": "CL - CLASE AU- Automática SA - Semiautomatica MO - Móvil IT - Internet T - TARIFA N - Normal R - Reducida"
+  },
+  "equipoMovilACuotas": {
+    "equipo": "Baseport",
+    "imei": "",
+    "fechaCompra": "",
+    "facturaVenta": "",
+    "numeroCuota": "",
+    "valorCuota": "0",
+    "saldoPendiente": "0",
+    "totalPagarCuotaPeriodo": "0",
+    "historialCuotas": []
+  },
+  "informacionReconexion": {
+    "fechaAplicacion": "",
+    "valorReconexion": "32,310",
+    "notas": "En caso de suspensión por No Pago, Recuerda que en tu próxima factura se cobrará el valor por Reconexión según los productos que tengas contratados. Si tienes un TRIO Línea Fija, Internet Fijo y Televisíon .....$ 37,815 más IVA"
+  },
+  "gastosCobranza": {
+    "rangosMora": [
+      {"rango": "1-30 días", "valor": "1,200"},
+      {"rango": "31-60 días", "valor": "1,700"},
+      {"rango": "61-90 días", "valor": "3,100"},
+      {"rango": "91-120 días", "valor": "5,800"},
+      {"rango": "121-180 días", "valor": "8,500"},
+      {"rango": "181-360 días", "valor": "11,200"},
+      {"rango": "mayor a 360 días", "valor": "13,900"}
+    ],
+    "notas": "Importante: A partir de febrero de 2025 si pagas tu factura después de la fecha de vencimiento, se generará un cobro por gastos de cobranza el cual dependerá de la edad de mora así: desde 1 hasta 30 días: $1.200, 31 a 60 días: $1.700, 61 a 90 días: $3.100, 91 a 120 días: $5.800, 121 a 180 días: $8.500, 181 a 360 días: $11.200, mayor a 360 días de mora: $13.900. Este cobro incluye IVA y se verá reflejado en la factura generada posterior al pago de tu deuda."
+  },
+  "notificacionCentralesRiesgo": {
+    "mensaje": "Estimado cliente, recuerde que tiene hasta la fecha límite de pago oportuno para cancelar su factura y evitar la suspensión del servicio, intereses de mora, cobro de rehabilitación por cada una de sus líneas y reporte a centrales de riesgo como moroso. Si ya realizó el pago, haga caso omiso de este aviso."
+  },
+  "mensajesImportantes": [
+    {
+      "titulo": "¿Qué Necesitas Saber?",
+      "contenido": "En Movistar no enviamos mensajes ofreciendo porcentajes (%) de descuento para pago de tus deudas, tu factura mensual o de tu equipo con pago en cuotas. No caigas en engaños. Verifica siempre el estado de tu cuenta en nuestros canales oficiales."
+    },
+    {
+      "titulo": "¿Qué Necesitas Saber?",
+      "contenido": "¡SIN ESPERAS, SIN LLAMADAS Y SIN FILAS! Ahora puedes solicitar y pagar tu Factura Digital o hacer otros trámites de manera fácil y segura. Para clientes individuales: Descarga la App Mi Movistar o escribe \"Hola\" al WhatsApp 315 233 3333. Para Empresas: Entra en www.movistar.co/empresas o escribe \"Hola\" al WhatsApp 3166066666."
+    },
+    {
+      "titulo": "¿Qué Necesitas Saber?",
+      "contenido": "Esta factura incluye el cobro proporcional de los servicios no facturados por estar suspendido. El valor se calcula desde la fecha de reactivación del servicio hasta el corte de facturación."
+    }
+  ],
+  "tasaInteresesMora": {
+    "mes": "Marzo",
+    "porcentaje": "1,8661%"
+  },
+  "informacionLegal": {
+    "cufe": "cufe_ddfc6ofec0225bf92018b253b2044cd322e241d064288e3ecdd35c3252f8b90313247ef138d4974613ba1b3126f283ba",
+    "autorizacionFacturacionElectronica": {
+      "numero": "18764074905464",
+      "fechaResolucion": "2024-07-11",
+      "prefijo": "BEC",
+      "rangoInicial": "400000001",
+      "rangoFinal": "450000000",
+      "fechaVigenciaDesde": "2024-07-11",
+      "fechaVigenciaHasta": "2026-07-11"
+    }
+  },
+  "canalesPago": {
+    "numeroReferenciaPago": {
+      "principal": "60255921661",
+      "servicio": "60255921662",
+      "equipo": "60255921663"
+    },
+    "opcionesPago": [
+      "App Mi Movistar",
+      "Web Mi Movistar",
+      "Nequi",
+      "Daviplata",
+      "PSE",
+      "Portal web de tu banco",
+      "Centros de Experiencia CE BARRANCABERMEJA, CE BUCARAMANGA CABECERA, CE BUCARAMANGA CENTRO, CE PIEDECUESTA",
+      "Máquinas de Autopago",
+      "Débito automático en Cuenta Bancaria"
+    ]
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "metadatos": {
+    "version": "2.1",
+    "fechaActualizacion": "2025-04-06",
+    "descripcion": "Plantilla JSON con instrucciones detalladas para la extracción completa y precisa de datos de facturas de Movistar Colombia (servicios móviles y fijos)"
+  },
+  "instruccionesParaCompletarPlantilla": {
+    "descripcion": "Esta sección contiene instrucciones exhaustivas para completar correctamente la plantilla JSON con TODOS los datos presentes en una factura Movistar",
+    
+    "procesoGeneral": [
+      "1. Analizar exhaustivamente TODAS las páginas del documento PDF de la factura, prestando especial atención a las secciones menos visibles y páginas finales",
+      "2. Identificar el tipo de servicio (móvil o fijo) para seleccionar la estructura de plantilla adecuada",
+      "3. Completar cada sección de la plantilla manteniendo todos los valores originales sin redondeos ni aproximaciones",
+      "4. No omitir ningún concepto, cargo o información que aparezca en la factura original, incluso si parece redundante",
+      "5. Conservar el formato exacto de todos los valores monetarios, fechas y datos técnicos como se presentan en la factura",
+      "6. Verificar la integridad matemática de todos los totales y subtotales para garantizar la coherencia",
+      "7. Incluir todas las notas, advertencias y mensajes especiales que aparecen en cualquier parte de la factura"
+    ],
+    
+    "seccionesObligatorias": {
+      "informacionCliente": [
+        "Nombre completo del cliente titular sin abreviaturas",
+        "Tipo y número de identificación (CC, NIT) exactos",
+        "Dirección completa con todos los elementos (calle, número, interior, barrio, etc.)",
+        "Ciudad y departamento en el formato exacto de la factura"
+      ],
+      
+      "informacionFactura": [
+        "Número de factura electrónica completo (BEC...)",
+        "Número de referencia principal y números secundarios para pagos separados (servicio/equipo)",
+        "Todas las fechas del ciclo: generación, vencimiento, suspensión, inicio y fin del período facturado",
+        "Línea de tiempo completa con todas las fechas relevantes en el formato DD/MM/AAAA"
+      ],
+      
+      "informacionServicio": {
+        "servicioMovil": [
+          "Número de línea completo con 10 dígitos",
+          "Nombre exacto del plan contratado con su código (ej. Pospago_Sin_Fin_3910)",
+          "Todas las características específicas del plan: minutos nacionales/internacionales, datos, SMS",
+          "Condiciones especiales de navegación, aplicaciones incluidas y límites de velocidad",
+          "Destinos internacionales incluidos y cantidades específicas para cada destino",
+          "Tarifas adicionales para todos los servicios (voz, SMS) por tipo de destino"
+        ],
+        "servicioFijo": [
+          "Número de línea completo",
+          "Tipo específico de plan (Dúo, Trío) con todos sus componentes",
+          "Velocidad contratada de banda ancha (Mbps)",
+          "Servicios de televisión incluidos y decodificadores",
+          "Servicios de telefonía fija incluidos y minutos por destino",
+          "Servicios de streaming o contenido incluidos (Disney+, Netflix, etc.)"
+        ]
+      },
+      
+      "resumenFacturacion": [
+        "Saldo mes anterior (debe ser 0 o el monto específico)",
+        "Total factura mes anterior con monto exacto",
+        "Notas crédito aplicadas (tanto para servicio como para equipos)",
+        "Pagos realizados (siempre con signo negativo)",
+        "Cargos de reconexión e intereses de mora detallados",
+        "Servicio mes actual con todos los impuestos incluidos",
+        "Subtotal de equipo a cuotas cuando aplique",
+        "Total a pagar del servicio y equipos"
+      ],
+      
+      "detalleFacturacion": [
+        "Valor nominal del plan sin descuentos",
+        "Todos los cargos adicionales con IVA desglosado",
+        "Gastos de cobranza con impuestos separados",
+        "Todos los descuentos aplicados con su descripción exacta",
+        "Conceptos por reconexión y suspensión del servicio"
+      ],
+      
+      "equipoMovilACuotas": {
+        "requerido": "Solo para facturas con equipos financiados",
+        "campos": [
+          "Modelo exacto del equipo con marca y referencia",
+          "Número IMEI completo",
+          "Valor total del equipo",
+          "Pago inicial realizado",
+          "Plazo de financiación y número total de cuotas",
+          "Valor de cada cuota",
+          "Cuota actual con número y monto",
+          "Historial completo de cuotas pagadas, actuales y futuras",
+          "Fechas de cobro para cada cuota y estado (pagada, facturada, por facturar)"
+        ]
+      },
+      
+      "detalleConsumos": {
+        "llamadas": [
+          "TODAS las llamadas registradas durante el período sin excepción",
+          "Información completa para cada llamada: fecha, hora, destino, duración, valor",
+          "Separación por tipos (locales, a móvil, a otros operadores, internacionales)",
+          "Totales por categoría de llamada con número de llamadas y valor",
+          "Códigos especiales usados en llamadas (AU, SA, MO, N, R, etc.) con su explicación"
+        ],
+        "mensajesTexto": [
+          "Todos los SMS enviados/recibidos durante el período",
+          "Detalle completo: fecha, hora, destino, dirección (E/S), descripción",
+          "Total de mensajes y valor total cuando aplique"
+        ],
+        "datosInternet": [
+          "Registro completo de TODAS las sesiones de datos sin resumen",
+          "Información detallada por sesión: fecha, hora, consumo en KB",
+          "Total de datos en KB/MB/GB y valor total",
+          "Notas sobre límites de velocidad o cambios de tarifa"
+        ]
+      },
+      
+      "historicoCunsumos": [
+        "Evolución de consumo en miles de pesos para los últimos 6 meses",
+        "Histórico completo de minutos/segundos para los últimos 6 meses",
+        "Histórico completo de datos (GB) para los últimos 6 meses",
+        "Promedio exacto para cada categoría sin redondeo"
+      ],
+      
+      "comparativoCargos": [
+        "Mes anterior: desglose completo de todos los conceptos",
+        "Mes actual: desglose completo de todos los conceptos",
+        "Variación exacta entre mes actual y anterior con signos correctos",
+        "Totales y subtotales para cada categoría"
+      ],
+      
+      "informacionReconexion": [
+        "Fecha exacta de aplicación del cobro de reconexión",
+        "Valor de reconexión específico por tipo de servicio",
+        "Notas completas sobre las tarifas de reconexión para diferentes servicios",
+        "Advertencias sobre suspensión y reconexión"
+      ],
+      
+      "gastosCobranza": [
+        "Tabla completa de rangos de mora (1-30 días, 31-60 días, etc.)",
+        "Valores exactos para cada rango de mora",
+        "Notas y explicaciones sobre la aplicación de estos cargos",
+        "Cargos ya aplicados en la factura actual por este concepto"
+      ],
+      
+      "mensajesImportantes": [
+        "TODOS los mensajes importantes que aparezcan en cualquier parte de la factura",
+        "Título exacto y contenido completo de cada mensaje",
+        "Advertencias sobre fraudes, estafas o cambios en servicios",
+        "Mensajes sobre cambios de precios en servicios (ej. Amazon Prime Video)",
+        "Información sobre servicios suspendidos o reactivados"
+      ],
+      
+      "informacionLegal": [
+        "Código CUFE completo",
+        "Detalles completos de autorización de facturación electrónica",
+        "Tasas de interés de mora con mes y porcentaje exacto",
+        "Información fiscal y tributaria relevante"
+      ],
+      
+      "canalesPago": [
+        "Números de referencia para pagos (principal, servicio, equipo)",
+        "Lista completa de todas las opciones de pago disponibles",
+        "Información de centros de atención y puntos de pago físicos",
+        "Canales digitales y códigos para pagos electrónicos"
+      ]
+    },
+    
+    "verificacionesEspecificas": [
+      "Comprobar que TODOS los registros detallados de consumo (llamadas, SMS, datos) estén incluidos",
+      "Verificar que cada sección tenga sus totales y que estos coincidan con los valores de la factura",
+      "Comprobar que los servicios adicionales tengan su valor con y sin impuestos",
+      "Verificar que todas las cuotas de equipos estén listadas (pasadas, actuales y futuras)",
+      "Comprobar que los descuentos aparezcan con signo negativo y descripción exacta",
+      "Verificar que todos los cargos de reconexión y mora estén correctamente registrados",
+      "Comprobar la consistencia en formatos de fechas, valores monetarios y cantidades",
+      "Verificar que se hayan incluido todos los mensajes importantes y notas especiales",
+      "Comprobar que el total a pagar coincida con la suma de todos los conceptos"
+    ],
+    
+    "erroresComunes": [
+      "OMITIR registros de llamadas, SMS o datos por considerarlos repetitivos o numerosos",
+      "EXCLUIR información detallada de las páginas finales de la factura",
+      "RESUMIR los consumos en lugar de incluir el detalle completo",
+      "IGNORAR servicios con valor $0 que estén incluidos en el plan",
+      "OMITIR descuentos aplicados a diferentes componentes del plan",
+      "EXCLUIR el historial completo de cuotas de equipos a plazos",
+      "REDONDEAR valores monetarios o porcentajes que deben ser exactos",
+      "OMITIR cargos pequeños o conceptos que parecen irrelevantes",
+      "IGNORAR notas y advertencias sobre cobros futuros o cargos condicionales",
+      "EXCLUIR información técnica sobre velocidades, límites o restricciones del servicio",
+      "NO SEPARAR correctamente los tipos de llamadas según su destino",
+      "OMITIR información sobre servicios de valor agregado incluidos en el plan"
+    ],
+    
+    "ejemplosDeValidacion": [
+      {
+        "seccion": "detalleConsumos.llamadas",
+        "ejemplo": {
+          "total": "931",
+          "valorTotal": "0",
+          "detalle": [
+            {
+              "fecha": "24/01/25",
+              "hora": "07:45:58",
+              "numeroMarcado": "573229250725 MOVISTAR",
+              "duracion": "00:06:48",
+              "valorUnitario": "0",
+              "total": "0"
+            },
+            "... [incluir TODOS los registros, no solo ejemplos] ..."
+          ]
+        },
+        "nota": "Debe incluirse cada llamada individual realizada durante el período facturado"
+      },
+      {
+        "seccion": "gastosCobranza.rangosMora",
+        "ejemplo": [
+          {"rango": "1-30 días", "valor": "1,200"},
+          {"rango": "31-60 días", "valor": "1,700"},
+          {"rango": "61-90 días", "valor": "3,100"},
+          {"rango": "91-120 días", "valor": "5,800"},
+          {"rango": "121-180 días", "valor": "8,500"},
+          {"rango": "181-360 días", "valor": "11,200"},
+          {"rango": "mayor a 360 días", "valor": "13,900"}
+        ],
+        "nota": "Cada rango de mora debe incluirse con su valor exacto"
+      },
+      {
+        "seccion": "informacionServicio.plan.caracteristicas",
+        "ejemplo": {
+          "navegacion": {
+            "condicionesEspeciales": "Despues de consumida la capacidad navegas Sin Fin hasta 1Mbps",
+            "estadoInternet": "Ilimitado"
+          },
+          "appsTVIncluidas": "Movistar Tv App Incluido",
+          "minutosInternacionales": {
+            "cantidad": "100",
+            "destinos": "Estados Unidos, Puerto Rico, Canada y Venezuela"
+          },
+          "smsInternacionales": "346",
+          "minutosNacionales": "Ilimitado",
+          "smsNacionales": "Ilimitado"
+        },
+        "nota": "Todas las características específicas del plan deben detallarse con precisión"
+      }
+    ],
+    
+    "recomendacionesFinales": [
+      "Analizar detenidamente TODAS las páginas de la factura antes de comenzar a completar la plantilla",
+      "Utilizar exactamente los mismos términos y descripciones que aparecen en la factura original",
+      "No realizar redondeos ni aproximaciones en ningún valor monetario o cantidad",
+      "Mantener la estructura jerárquica correcta para todos los conceptos y cargos",
+      "Incluir SIEMPRE todos los registros de consumo detallados, sin resumir ni omitir",
+      "Verificar la coincidencia matemática de todos los subtotales y totales finales",
+      "Comprobar que los mensajes importantes estén transcritos exactamente como aparecen",
+      "Asegurar que la plantilla JSON final contenga absolutamente toda la información presente en la factura"
+    ]
+  },
+  "estructuraPlantillaActual": {
+    "descripcion": "Esquema actual de la plantilla JSON para facturas Movistar. Esta sección debe actualizarse si se realizan modificaciones a la estructura de la plantilla",
+    "servicioMovil": {
+      "rutaArchivo": "plantilla-json-movil-actualizada.json",
+      "ultimaActualizacion": "2025-04-06"
+    },
+    "servicioFijo": {
+      "rutaArchivo": "plantilla-json-servicios-fijos.json",
+      "ultimaActualizacion": "2025-04-06"
+    }
+  },
+  "informacionCliente": {
+    "nombre": "[NOMBRE DEL CLIENTE]",
+    "identificacion": {
+      "tipo": "[Nit o CC]",
+      "numero": "[NUMERO ID]"
+    },
+    "direccion": "[DIRECCION]",
+    "ciudad": "[CIUDAD] - [DEPARTAMENTO]"
+  },
+  "informacionFactura": {
+    "numeroFactura": "[NUMERO]",
+    "numeroReferencia": {
+      "principal": "[NUMERO]",
+      "servicio": "[NUMERO]",
+      "equipo": "[NUMERO]"
+    },
+    "fechaGeneracion": "[FECHA]",
+    "fechaVencimiento": "[FECHA]",
+    "fechaSuspension": "[FECHA]",
+    "periodoFacturado": {
+      "inicio": "[FECHA INICIO]",
+      "fin": "[FECHA FIN]"
+    },
+    "lineaTiempo": {
+      "inicioPeriodo": "[FECHA]",
+      "fechaGeneracion": "[FECHA]",
+      "fechaVencimiento": "[FECHA]",
+      "fechaSuspension": "[FECHA]",
+      "finPeriodo": "[FECHA]"
+    }
+  },
+  "informacionServicio": {
+    "tipoServicio": "[Tipo de Servicio]",
+    "numeroLinea": "[NUMERO]",
+    "plan": {
+      "nombre": "[NOMBRE DEL PLAN]",
+      "caracteristicas": {
+        "navegacion": {
+          "condicionesEspeciales": "[TEXTO DESCRIPTIVO]",
+          "estadoInternet": "[ESTADO]"
+        },
+        "appsTVIncluidas": "[ESTADO]",
+        "minutosInternacionales": {
+          "cantidad": "[CANTIDAD]",
+          "destinos": "[LISTA DE DESTINOS]"
+        },
+        "smsInternacionales": "[CANTIDAD]",
+        "minutosNacionales": "[DESCRIPCION]",
+        "smsNacionales": "[DESCRIPCION]"
+      },
+      "tarifasAdicionales": {
+        "vozMovistar": "[MONTO]",
+        "vozFijo": "[MONTO]",
+        "vozOtrosOperadores": "[MONTO]",
+        "smsOtrosOperadores": "[MONTO]",
+        "smsMovistar": "[MONTO]"
+      },
+      "notificacionesCambioPrecios": [
+        {
+          "servicio": "[NOMBRE DEL SERVICIO]",
+          "fechaCambio": "[FECHA]",
+          "nuevoPrecio": "[MONTO]",
+          "mensaje": "[TEXTO EXPLICATIVO]"
+        }
+      ]
+    }
+  },
+  "resumenFacturacion": {
+    "saldoMesAnterior": "[MONTO]",
+    "totalFacturaMesAnterior": "[MONTO]",
+    "totalNotasCreditoServicio": "-[MONTO]",
+    "pagosRealizados": "-[MONTO]",
+    "cargosReconexionMora": {
+      "interesMoraAnterior": "[MONTO]",
+      "reconexion": "[MONTO]",
+      "total": "[MONTO]"
+    },
+    "servicioMesActual": "[MONTO]",
+    "serviciosMesActualIVAIncluido": "[MONTO]",
+    "equipoACuotas": {
+      "subtotal": "[MONTO]",
+      "valorCuotaMesAnterior": "[MONTO]",
+      "totalNotasCreditoEquipo": "-[MONTO]"
+    },
+    "totalAPagar": "[MONTO]"
+  },
+  "detalleFacturacion": {
+    "valorPlan": "[MONTO]",
+    "cargosAdicionales": [
+      {
+        "descripcion": "[SERVICIO ADICIONAL]",
+        "valor": "[MONTO]",
+        "impuestos": "[MONTO]",
+        "valorConImpuestos": "[MONTO]"
+      }
+    ],
+    "gastosCobranza": [
+      {
+        "descripcion": "[DESCRIPCION]",
+        "valorSinImpuestos": "[MONTO]",
+        "impuestos": "[MONTO]",
+        "valorConImpuestos": "[MONTO]"
+      }
+    ],
+    "descuentos": [
+      {
+        "descripcion": "[DESCRIPCION DESCUENTO]",
+        "valor": "-[MONTO]"
+      }
+    ]
+  },
+  "comparativoCargos": {
+    "mesAnterior": {
+      "valorPlan": "[MONTO]",
+      "cargosAdicionales": "[MONTO]",
+      "descuentos": "-[MONTO]",
+      "total": "[MONTO]"
+    },
+    "mesActual": {
+      "valorPlan": "[MONTO]",
+      "cargosAdicionales": "[MONTO]",
+      "descuentos": "-[MONTO]",
+      "total": "[MONTO]"
+    },
+    "variacion": {
+      "valorPlan": "[MONTO]",
+      "cargosAdicionales": "[MONTO]",
+      "descuentos": "[MONTO]",
+      "total": "[MONTO]"
+    }
+  },
+  "historicoCunsumos": {
+    "evolucionConsumoMiles": {
+      "meses": {
+        "mes1": "[MONTO]",
+        "mes2": "[MONTO]",
+        "mes3": "[MONTO]",
+        "mes4": "[MONTO]",
+        "mes5": "[MONTO]",
+        "mes6": "[MONTO]"
+      },
+      "promedio": "[MONTO]"
+    },
+    "minutos": {
+      "meses": {
+        "mes1": "[CANTIDAD]",
+        "mes2": "[CANTIDAD]",
+        "mes3": "[CANTIDAD]",
+        "mes4": "[CANTIDAD]",
+        "mes5": "[CANTIDAD]",
+        "mes6": "[CANTIDAD]"
+      },
+      "promedio": "[CANTIDAD]"
+    },
+    "datos": {
+      "meses": {
+        "mes1": "[CANTIDAD]",
+        "mes2": "[CANTIDAD]",
+        "mes3": "[CANTIDAD]",
+        "mes4": "[CANTIDAD]",
+        "mes5": "[CANTIDAD]",
+        "mes6": "[CANTIDAD]"
+      },
+      "promedio": "[CANTIDAD]"
+    }
+  },
+  "detalleConsumos": {
+    "llamadas": {
+      "total": "[CANTIDAD]",
+      "valorTotal": "[MONTO]",
+      "detalle": [
+        {
+          "fecha": "[FECHA]",
+          "hora": "[HORA]",
+          "numeroMarcado": "[DESTINO]",
+          "duracion": "[DURACION]",
+          "valorUnitario": "[MONTO]",
+          "total": "[MONTO]"
+        }
+      ]
+    },
+    "llamadasInternacionales": {
+      "total": "[CANTIDAD]",
+      "valorTotal": "[MONTO]",
+      "detalle": [
+        {
+          "fecha": "[FECHA]",
+          "hora": "[HORA]",
+          "numeroMarcado": "[DESTINO]",
+          "destino": "[PAIS]",
+          "duracion": "[DURACION]",
+          "valorUnitario": "[MONTO]",
+          "total": "[MONTO]"
+        }
+      ]
+    },
+    "llamadasAOtrosOperadores": {
+      "total": "[CANTIDAD]",
+      "valorTotal": "[MONTO]",
+      "detalle": [
+        {
+          "fecha": "[FECHA]",
+          "hora": "[HORA]",
+          "numeroMarcado": "[DESTINO]",
+          "duracion": "[DURACION]",
+          "valorUnitario": "[MONTO]",
+          "total": "[MONTO]"
+        }
+      ]
+    },
+    "mensajesTexto": {
+      "total": "[CANTIDAD]",
+      "valorTotal": "[MONTO]",
+      "detalle": [
+        {
+          "fecha": "[FECHA]",
+          "hora": "[HORA]",
+          "destino": "[DESTINO]",
+          "direccion": "[ENTRANTE/SALIENTE]",
+          "descripcion": "[DESCRIPCION]",
+          "valorUnitario": "[MONTO]",
+          "total": "[MONTO]"
+        }
+      ]
+    },
+    "datosInternet": {
+      "totalKB": "[CANTIDAD]",
+      "valorTotal": "[MONTO]",
+      "detalle": [
+        {
+          "fecha": "[FECHA]",
+          "hora": "[HORA]",
+          "consumoKB": "[CANTIDAD]",
+          "valorUnitario": "[MONTO]",
+          "total": "[MONTO]"
+        }
+      ]
+    },
+    "nota": "[TEXTO EXPLICATIVO]"
+  },
+  "equipoMovilACuotas": {
+    "equipo": "[NOMBRE DEL EQUIPO]",
+    "imei": "[NUMERO IMEI]",
+    "fechaCompra": "[FECHA]",
+    "facturaVenta": "[NUMERO]",
+    "numeroCuota": "[NUMERO]",
+    "valorCuota": "[MONTO]",
+    "saldoPendiente": "[MONTO]",
+    "totalPagarCuotaPeriodo": "[MONTO]",
+    "historialCuotas": [
+      {
+        "numeroCuota": "[NUMERO]",
+        "fechaCobro": "[FECHA]",
+        "valor": "[MONTO]",
+        "estado": "[ESTADO]"
+      }
+    ]
+  },
+  "informacionReconexion": {
+    "fechaAplicacion": "[FECHA]",
+    "valorReconexion": "[MONTO]",
+    "notas": "[TEXTO EXPLICATIVO]"
+  },
+  "gastosCobranza": {
+    "rangosMora": [
+      {"rango": "1-30 días", "valor": "[MONTO]"},
+      {"rango": "31-60 días", "valor": "[MONTO]"},
+      {"rango": "61-90 días", "valor": "[MONTO]"},
+      {"rango": "91-120 días", "valor": "[MONTO]"},
+      {"rango": "121-180 días", "valor": "[MONTO]"},
+      {"rango": "181-360 días", "valor": "[MONTO]"},
+      {"rango": "mayor a 360 días", "valor": "[MONTO]"}
+    ],
+    "notas": "[TEXTO EXPLICATIVO]"
+  },
+  "notificacionCentralesRiesgo": {
+    "mensaje": "[TEXTO DEL MENSAJE]"
+  },
+  "mensajesImportantes": [
+    {
+      "titulo": "[TITULO]",
+      "contenido": "[TEXTO DEL MENSAJE]"
+    }
+  ],
+  "tasaInteresesMora": {
+    "mes": "[MES]",
+    "porcentaje": "[PORCENTAJE]"
+  },
+  "informacionLegal": {
+    "cufe": "[CODIGO CUFE]",
+    "autorizacionFacturacionElectronica": {
+      "numero": "[NUMERO]",
+      "fechaResolucion": "[FECHA]",
+      "prefijo": "[PREFIJO]",
+      "rangoInicial": "[NUMERO]",
+      "rangoFinal": "[NUMERO]",
+      "fechaVigenciaDesde": "[FECHA]",
+      "fechaVigenciaHasta": "[FECHA]"
+    }
+  },
+  "canalesPago": {
+    "numeroReferenciaPago": {
+      "principal": "[NUMERO]",
+      "servicio": "[NUMERO]",
+      "equipo": "[NUMERO]"
+    },
+    "opcionesPago": [
+      "App Mi Movistar",
+      "Web Mi Movistar",
+      "Nequi",
+      "Daviplata",
+      "PSE",
+      "Centros de Experiencia Movistar",
+      "Puntos de pago autorizados",
+      "Débito automático en cuenta bancaria"
+    ]
+  }
+}
